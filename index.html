@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JK99Gaming</title>
+  <title>JK99Gaming — The Brand</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -12,207 +12,192 @@
 <body>
 
   <!-- NAV -->
-  <header class="nav">
+  <header class="nav" id="nav">
     <div class="nav__inner container">
       <a href="#" class="nav__logo">
-        <img src="images/logo.png" alt="JK99Gaming" class="nav__logo-img" />
+        <img src="images/logo.svg" alt="JK99Gaming" />
       </a>
-      <nav class="nav__links">
-        <a href="#about">About</a>
-        <a href="#stream">Stream</a>
-        <a href="#merch">Merch</a>
-        <a href="#connect">Connect</a>
-      </nav>
-      <a href="https://www.twitch.tv/JK99Gaming" target="_blank" rel="noopener" class="btn btn--outline nav__cta">Watch Live</a>
-      <button class="nav__burger" aria-label="Menu" onclick="toggleMenu()">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="nav__mobile" id="mobileMenu">
-      <a href="#about" onclick="toggleMenu()">About</a>
-      <a href="#stream" onclick="toggleMenu()">Stream</a>
-      <a href="#merch" onclick="toggleMenu()">Merch</a>
-      <a href="#connect" onclick="toggleMenu()">Connect</a>
+      <div class="nav__socials">
+        <a href="https://www.twitch.tv/JK99Gaming" target="_blank" rel="noopener" aria-label="Twitch">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4.265 3H21v13.5l-4.5 4.5H12l-3 3v-3H4.265C3.014 21 3 19.986 3 19.5V4.5C3 3.014 4.014 3 4.265 3zm11.235 4.5v5.25h1.5V7.5H15.5zm-4.5 0v5.25h1.5V7.5H11z"/></svg>
+        </a>
+        <a href="#" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <a href="#" target="_blank" rel="noopener" aria-label="X">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="#" target="_blank" rel="noopener" aria-label="Discord">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03z"/></svg>
+        </a>
+      </div>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero__bg-img"></div>
-    <div class="hero__overlay"></div>
-    <div class="container hero__inner">
-      <div class="hero__content">
-        <div class="hero__tag">Fortnite &bull; Merch &bull; Community</div>
-        <h1 class="hero__title">
-          Built for <br /><span class="gradient-text">gamers.</span><br />Worn by <span class="gradient-text">legends.</span>
-        </h1>
-        <p class="hero__sub">
-          JK99Gaming — Fortnite player, content creator, and the brand
-          behind the drip your squad is already jealous of.
-        </p>
-        <div class="hero__actions">
-          <a href="#merch" class="btn btn--primary">Shop Merch</a>
-          <a href="https://www.twitch.tv/JK99Gaming" target="_blank" rel="noopener" class="btn btn--ghost">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4.265 3H21v13.5l-4.5 4.5H12l-3 3v-3H4.265C3.014 21 3 19.986 3 19.5V4.5C3 3.014 4.014 3 4.265 3zm11.235 4.5v5.25h1.5V7.5H15.5zm-4.5 0v5.25h1.5V7.5H11z"/></svg>
-            Twitch
-          </a>
-        </div>
+  <section class="hero" id="hero">
+    <canvas id="particles"></canvas>
+    <div class="hero__bg" style="background-image:url('images/hero-bg.jpg')"></div>
+    <div class="hero__vignette"></div>
+    <div class="hero__content">
+      <div class="hero__logo-wrap">
+        <img src="images/logo.svg" alt="JK99Gaming" class="hero__logo" />
       </div>
-      <div class="hero__character">
-        <img src="images/hero-character.jpg" alt="" aria-hidden="true" class="hero__char-img" />
+      <div class="hero__wordmark">JK99GAMING</div>
+      <p class="hero__sub">Gaming &nbsp;·&nbsp; Brand &nbsp;·&nbsp; Identity</p>
+      <div class="hero__scroll-cue">
+        <div class="hero__scroll-line"></div>
+        <span>Scroll</span>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="about section" id="about">
-    <div class="container about__inner">
-      <div class="about__left">
-        <div class="label">About</div>
-        <h2 class="section-title">Behind the <span class="gradient-text">tag.</span></h2>
-        <p>
-          JK99Gaming started as a Fortnite passion project and grew into a full brand.
-          The streams may be quieter these days, but the community and the merch
-          are louder than ever.
-        </p>
-        <p>
-          Real setup. Real plays. Real gear you can actually wear out.
-        </p>
-        <a href="https://www.twitch.tv/JK99Gaming" target="_blank" rel="noopener" class="btn btn--primary">Follow on Twitch</a>
-      </div>
-      <div class="about__right">
-        <div class="about__setup-wrap">
-          <img src="images/setup.jpg" alt="JK99Gaming setup" class="about__setup-img" />
-          <div class="about__setup-badge">
-            <img src="images/logo.png" alt="JK99" />
-          </div>
-        </div>
-      </div>
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>JK99GAMING</span><span class="marquee__dot">◆</span>
+      <span>THE BRAND</span><span class="marquee__dot">◆</span>
+      <span>GAMING</span><span class="marquee__dot">◆</span>
+      <span>IDENTITY</span><span class="marquee__dot">◆</span>
+      <span>JK99GAMING</span><span class="marquee__dot">◆</span>
+      <span>THE BRAND</span><span class="marquee__dot">◆</span>
+      <span>GAMING</span><span class="marquee__dot">◆</span>
+      <span>IDENTITY</span><span class="marquee__dot">◆</span>
+      <span>JK99GAMING</span><span class="marquee__dot">◆</span>
+      <span>THE BRAND</span><span class="marquee__dot">◆</span>
+      <span>GAMING</span><span class="marquee__dot">◆</span>
+      <span>IDENTITY</span><span class="marquee__dot">◆</span>
+    </div>
+  </div>
+
+  <!-- VISUAL BREAK 1: atmosphere image -->
+  <section class="visual-break" id="visual">
+    <div class="visual-break__img" style="background-image:url('images/hero-bg.jpg')"></div>
+    <div class="visual-break__overlay"></div>
+    <div class="visual-break__text reveal">
+      <span class="visual-break__pre">The grind never stops.</span>
+      <h2>BUILT<br /><em>DIFFERENT.</em></h2>
     </div>
   </section>
 
-  <!-- MERCH -->
-  <section class="merch section" id="merch">
+  <!-- BRAND IDENTITY -->
+  <section class="brand section" id="brand">
     <div class="container">
-      <div class="merch__header">
-        <div class="label">Merch</div>
-        <h2 class="section-title">Rep the <span class="gradient-text">brand.</span></h2>
-        <p class="section-sub">
-          Official JK99Gaming gear — built for gamers who want their fits
-          to hit as hard as their combos.
-        </p>
-      </div>
-      <div class="merch__showcase">
-        <div class="merch__feature-card">
-          <div class="merch__product-img-wrap">
-            <img src="images/hoodie.jpg" alt="JK99 Hoodie" class="merch__product-img" />
-            <div class="merch__product-badge">New</div>
-          </div>
-          <div class="merch__product-info">
-            <h3>JK99 Signature Hoodie</h3>
-            <p>The official hoodie — navy fleece, chest logo, built to last.</p>
-            <!-- Update href with your actual merch store URL -->
-            <a href="#" class="btn btn--primary">Shop Now</a>
+      <div class="brand__grid">
+        <div class="brand__left reveal">
+          <div class="label">Identity</div>
+          <h2 class="section-title">More than<br />a <span class="gradient-text">tag.</span></h2>
+          <p>
+            JK99 isn't just a username — it's a mark.
+            A brand built from real hours in the game,
+            a community that showed up, and a look
+            that carries weight beyond the screen.
+          </p>
+          <p>
+            The logo. The colors. The attitude.
+            All of it tells the same story.
+          </p>
+        </div>
+        <div class="brand__right reveal reveal--delay">
+          <div class="brand__logo-showcase">
+            <div class="brand__logo-glow"></div>
+            <img src="images/logo.svg" alt="JK99 Logo" class="brand__logo-img floating" />
           </div>
         </div>
-        <div class="merch__grid">
-          <div class="merch-tile">
-            <div class="merch-tile__icon">👕</div>
-            <span>Tees</span>
-          </div>
-          <div class="merch-tile">
-            <div class="merch-tile__icon">🧢</div>
-            <span>Caps</span>
-          </div>
-          <div class="merch-tile">
-            <div class="merch-tile__icon">🧥</div>
-            <span>Hoodies</span>
-          </div>
-          <div class="merch-tile">
-            <div class="merch-tile__icon">🎮</div>
-            <span>Accessories</span>
-          </div>
+      </div>
+
+      <!-- Color palette -->
+      <div class="palette reveal">
+        <div class="palette__swatch palette__swatch--blue">
+          <div class="palette__color"></div>
+          <span class="palette__name">JK Blue</span>
+          <span class="palette__hex">#4BADE8</span>
+        </div>
+        <div class="palette__swatch palette__swatch--orange">
+          <div class="palette__color"></div>
+          <span class="palette__name">JK Orange</span>
+          <span class="palette__hex">#F26B3A</span>
+        </div>
+        <div class="palette__swatch palette__swatch--gold">
+          <div class="palette__color"></div>
+          <span class="palette__name">JK Gold</span>
+          <span class="palette__hex">#F5A623</span>
+        </div>
+        <div class="palette__swatch palette__swatch--dark">
+          <div class="palette__color"></div>
+          <span class="palette__name">Deep Dark</span>
+          <span class="palette__hex">#06040F</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- STREAM -->
-  <section class="stream section" id="stream">
-    <div class="container">
-      <div class="stream__header">
-        <div class="label">Live Channel</div>
-        <h2 class="section-title">Catch the <span class="gradient-text">stream.</span></h2>
-        <p class="section-sub">Tune in when JK99 goes live — drops, gameplay, and good vibes.</p>
-      </div>
-      <div class="stream__embed-wrap">
-        <iframe
-          src="https://player.twitch.tv/?channel=JK99Gaming&parent=jk99gaming.com&parent=localhost"
-          frameborder="0"
-          allowfullscreen
-          scrolling="no"
-          class="stream__embed"
-          title="JK99Gaming Twitch Stream"
-        ></iframe>
-      </div>
-      <div class="stream__cta">
-        <a href="https://www.twitch.tv/JK99Gaming" target="_blank" rel="noopener" class="btn btn--primary">
-          Open on Twitch
-        </a>
-      </div>
+  <!-- VISUAL BREAK 2: character art -->
+  <section class="character-break" id="character">
+    <div class="character-break__img" style="background-image:url('images/character-art.jpg')"></div>
+    <div class="character-break__overlay"></div>
+    <div class="character-break__content reveal">
+      <div class="character-break__tag label">The Player</div>
+      <h2 class="character-break__title">Every <span class="gradient-text">victory</span><br />leaves a mark.</h2>
+      <a href="https://www.twitch.tv/JK99Gaming" target="_blank" rel="noopener" class="btn btn--primary">
+        Follow on Twitch
+      </a>
     </div>
   </section>
 
   <!-- CONNECT -->
   <section class="connect section" id="connect">
     <div class="container">
-      <div class="label">Connect</div>
-      <h2 class="section-title">Find me <span class="gradient-text">everywhere.</span></h2>
-      <p class="section-sub">Follow, subscribe, and join the community.</p>
-      <div class="socials">
+      <div class="connect__header reveal">
+        <div class="label">Find Me</div>
+        <h2 class="connect__heading">
+          Let's <span class="gradient-text">play.</span>
+        </h2>
+      </div>
+      <div class="connect__grid">
 
-        <a href="https://www.twitch.tv/JK99Gaming" target="_blank" rel="noopener" class="social-card social-card--twitch">
-          <div class="social-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M4.265 3H21v13.5l-4.5 4.5H12l-3 3v-3H4.265C3.014 21 3 19.986 3 19.5V4.5C3 3.014 4.014 3 4.265 3zm11.235 4.5v5.25h1.5V7.5H15.5zm-4.5 0v5.25h1.5V7.5H11z"/></svg>
+        <a href="https://www.twitch.tv/JK99Gaming" target="_blank" rel="noopener" class="connect-card reveal">
+          <div class="connect-card__icon connect-card__icon--twitch">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M4.265 3H21v13.5l-4.5 4.5H12l-3 3v-3H4.265C3.014 21 3 19.986 3 19.5V4.5C3 3.014 4.014 3 4.265 3zm11.235 4.5v5.25h1.5V7.5H15.5zm-4.5 0v5.25h1.5V7.5H11z"/></svg>
           </div>
-          <div class="social-card__info">
-            <span class="social-card__name">Twitch</span>
-            <span class="social-card__handle">@JK99Gaming</span>
+          <div class="connect-card__body">
+            <span class="connect-card__platform">Twitch</span>
+            <span class="connect-card__handle">@JK99Gaming</span>
           </div>
-          <div class="social-card__arrow">→</div>
+          <div class="connect-card__arrow">↗</div>
         </a>
 
-        <a href="#" class="social-card social-card--youtube" target="_blank" rel="noopener">
-          <div class="social-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        <a href="#" target="_blank" rel="noopener" class="connect-card reveal reveal--delay">
+          <div class="connect-card__icon connect-card__icon--youtube">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
           </div>
-          <div class="social-card__info">
-            <span class="social-card__name">YouTube</span>
-            <span class="social-card__handle">Add your channel</span>
+          <div class="connect-card__body">
+            <span class="connect-card__platform">YouTube</span>
+            <span class="connect-card__handle">Add channel</span>
           </div>
-          <div class="social-card__arrow">→</div>
+          <div class="connect-card__arrow">↗</div>
         </a>
 
-        <a href="#" class="social-card social-card--x" target="_blank" rel="noopener">
-          <div class="social-card__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        <a href="#" target="_blank" rel="noopener" class="connect-card reveal reveal--delay-2">
+          <div class="connect-card__icon connect-card__icon--x">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
           </div>
-          <div class="social-card__info">
-            <span class="social-card__name">X / Twitter</span>
-            <span class="social-card__handle">Add your handle</span>
+          <div class="connect-card__body">
+            <span class="connect-card__platform">X / Twitter</span>
+            <span class="connect-card__handle">Add handle</span>
           </div>
-          <div class="social-card__arrow">→</div>
+          <div class="connect-card__arrow">↗</div>
         </a>
 
-        <a href="#" class="social-card social-card--discord" target="_blank" rel="noopener">
-          <div class="social-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+        <a href="#" target="_blank" rel="noopener" class="connect-card reveal reveal--delay-3">
+          <div class="connect-card__icon connect-card__icon--discord">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03z"/></svg>
           </div>
-          <div class="social-card__info">
-            <span class="social-card__name">Discord</span>
-            <span class="social-card__handle">Add your server</span>
+          <div class="connect-card__body">
+            <span class="connect-card__platform">Discord</span>
+            <span class="connect-card__handle">Add server</span>
           </div>
-          <div class="social-card__arrow">→</div>
+          <div class="connect-card__arrow">↗</div>
         </a>
 
       </div>
@@ -222,11 +207,8 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer__inner">
-      <img src="images/logo.png" alt="JK99Gaming" class="footer__logo-img" />
-      <span class="footer__copy">&copy; 2026 JK99Gaming. All rights reserved.</span>
-      <div class="footer__links">
-        <a href="https://www.twitch.tv/JK99Gaming" target="_blank" rel="noopener">Twitch</a>
-      </div>
+      <img src="images/logo.svg" alt="JK99Gaming" class="footer__logo" />
+      <span class="footer__copy">&copy; 2026 JK99Gaming</span>
     </div>
   </footer>
 
